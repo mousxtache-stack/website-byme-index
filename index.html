@@ -1,105 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            padding: 0.5rem;
-            background-color: #333;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-        }
-
-        nav a:hover {
-            background-color: #4CAF50;
-        }
-
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .project {
-            margin: 1rem auto;
-            padding: 1rem;
-            max-width: 600px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Mon Portfolio</h1>
-        <p>Bienvenue sur mon portfolio en ligne</p>
-    </header>
-
-    <nav>
-        <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Je suis Bijou, étudiant en SES, passionné par [votre domaine ou spécialité].</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projets</h2>
-        <div class="project">
-            <h3>Projet 1</h3>
-            <p>Description rapide de votre projet.</p>
+<html lang="en" class="notranslate" translate="no">
+  <head>
+    <meta name="description" content="Blackflare" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google" content="notranslate" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Blackflare.</title>
+    <script defer="defer" src="./app.js"></script>
+    <link href="./main.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="#">
+  </head>
+  <body>
+    <div class="loaderContainer">
+      <span class="progress progress--number"></span>
+      <span class="progress progress--button">Discover</span>
+    </div>
+    <div class="cursor cursor--main">
+      <div class="octagon"></div>
+      <span class="cursorLoader"></span>
+    </div>
+    <div class="cursor cursor--follower">
+      <div class="octagon"></div>
+    </div>
+    <div class="cursor cursor--dot"></div>
+    <div class="rotateMobileIndication">
+      <span>PLEASE TURN YOUR SCREEN</span>
+    </div>
+    <div class="hamburgerWrapper">
+      <span class="lineContainer lineContainer--1">
+        <span class="line line--1"></span>
+        <span class="line line--2"></span>
+      </span>
+      <span class="lineContainer lineContainer--2">
+        <span class="line line--1"></span>
+        <span class="line line--2"></span>
+      </span>
+      <span class="lineContainer lineContainer--3">
+        <span class="line line--1"></span>
+        <span class="line line--2"></span>
+      </span>
+      <span class="lineContainer lineContainer--4">
+        <span class="line line--1"></span>
+        <span class="line line--2"></span>
+      </span>
+    </div>
+    <div class="menuReveal">
+      <div class="linkWrapper linkWrapper--1">
+        <li class="media media--0">CONTACT</li>
+        <li class="media media--thoma">
+          <a href="mailto:#">Email</a> <br> <br>
+          <a href="discord.com/#/">Discord</a>
+        </li>
+      </div>
+      <div class="linkWrapper linkWrapper--2">
+        <li class="link link--home">
+          <a class="main">Home</a>
+          <a class="mask mask--home" data-splitting="chars">Home</a>
+        </li>
+        <li class="link link--about">
+          <a class="main"></a>
+          <a class="mask mask--about" data-splitting="chars"></a>
+        </li>
+        <li class="link link--work">
+          <a class="main">Shop</a>
+          <a class="mask mask--work" data-splitting="chars">Shop</a>
+        </li>
+        <li class="link link--showreel">
+          <a class="main"></a>
+          <a class="mask mask--showreel" data-splitting="chars"></a>
+        </li>
+      </div>
+    </div>
+    <span class="homeLink homeLink--about">About</span>
+    <span class="homeLink homeLink--work">Shop</span>
+    <button><span class="homeLink homeLink--panier">Tools</span></button>
+    <span class="homeLink homeLink--showreel"></span>
+    <div id="app">
+      <section class="container container--home">
+        <div class="titleWrapper">
+          <span class="subtitle subtitle--1">Discover,</span>
+          <span class="title title--1">BLACKFLARE</span>
         </div>
-        <div class="project">
-            <h3>Projet 2</h3>
-            <p>Description rapide de votre projet.</p>
+      </section>
+      <section class="container container--about" data-scroll-section>
+        <span class="title title--hey">Hello.</span>
+        <div class="aboutWrapper aboutWrapper--1">
+          <span class="scrollIndication scrollIndication--1">GO DOWN</span>
+          <span class="scrollIndication scrollIndication--2">GO DOWN</span>
+          <div class="heySection">
+            <span>We are Blackflare.</span>
+            <span>‎ </span>
+          </div>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Vous pouvez me contacter à : <a href="mailto:bijou@example.com">bijou@example.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Bijou. Tous droits réservés.</p>
-    </footer>
-</body>
+        <span class="title title--about"></span>
+        <div class="aboutWrapper aboutWrapper--2">
+          <div class="aboutSection">
+            <p>
+              Thank you for visiting my website!
+            </p>
+            <p>
+              Text to completeText to completeText to completeText to completeText to completeText to completeText to completeText to completeText to completeText to completeText to completeText to completeText to completeText to complete
+            </p>
+          </div>
+          <img />
+        </div>
+        <span class="title title--course"></span>
+        <div class="aboutWrapper aboutWrapper--3">
+          <div class="courseSection courseSection--1">
+            
+          </div>
+          <div class="courseSection courseSection--2">
+          
+          </div>
+          <div class="courseSection courseSection--3">
+           
+          </div>
+        </div>
+        <span class="title title--skills"></span>
+        <div class="aboutWrapper aboutWrapper--4">
+          <div class="skillsSection skillsSection--1">
+            <span></span>
+           
+          </div>
+          <div class="skillsSection skillsSection--2">
+            <span></span>
+           
+          </div>
+          <div class="skillsSection skillsSection--3">
+            <span></span>
+            
+          </div>
+        </div>
+      </section>
+      <section class="container container--work" data-scroll-section>
+        <div class="projectWrapper projectWrapper--1 skewElem">
+          <span class="projectName">
+            Void<span class="mask mask--1" data-splitting="chars"
+              >Void</span>
+          </span>
+          <span class="projectCat">The best cheat for Valorant</span>
+        </div>
+        <div class="projectWrapper projectWrapper--2 skewElem">
+          <span class="projectName">
+            Spoofer<span class="mask mask--2" data-splitting="chars"
+              >Spoofer</span
+            >
+          </span>
+          <span class="projectCat">For mask your identity </span>
+        </div>
+        <div class="projectWrapper projectWrapper--3 skewElem">
+          <span class="projectName">
+            Reaper<span class="mask mask--3" data-splitting="chars"
+              >Reaper</span
+            >
+          </span>
+          <span class="projectCat">Our 2nd cheat for Valorant</span>
+        </div>
+        <div class="projectWrapper projectWrapper--4 skewElem">
+          <span class="projectName">
+            TriggerBot<span class="mask mask--4" data-splitting="chars"
+              >TriggerBot</span
+            >
+          </span>
+          <span class="projectCat">Actually, the best TriggerBot in Valorant</span>
+        </div>
+        <div class="projectWrapper projectWrapper--5 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--5" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--6 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--6" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--7 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--7" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--8 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--8" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--9 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--9" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--10 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--10" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--11 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--11" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--12 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--12" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--13 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--13" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--14 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--14" data-splitting="chars">Exemple</span>
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--15 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--15" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--16 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--16" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--17 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--17" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--18 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--18" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--19 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--19" data-splitting="chars"
+              >Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+        <div class="projectWrapper projectWrapper--20 skewElem">
+          <span class="projectName">
+            Exemple<span class="mask mask--20" data-splitting="chars"
+              > Exemple</span
+            >
+          </span>
+          <span class="projectCat">Exemple</span>
+        </div>
+      </section>
+      <div class="workRevealContainer">
+        <span class="title title--1"></span>
+        <div class="titleProject">
+          <span class="title title--2"></span>
+        </div>
+        <div class="workRevealWrapper">
+          <div class="section section--1">
+            <p></p>
+          </div>
+          <div class="section section--2">
+            <img />
+          </div>
+        </div>
+        <div class="linkProject"></div>
+      </div>
+      <div class="workRevealMask"></div>
+    </div>
+    <div class="showreelRevealContainer">
+      <video></video>
+    </div>
+    <div class="musicWrapper">
+      <canvas class="canvas--music" style="width: 50px; height: 25px"></canvas>
+    </div>
+    <canvas class="canvas canvas--main"></canvas>
+    <canvas class="canvas canvas--noise"></canvas>
+  </body>
 </html>
